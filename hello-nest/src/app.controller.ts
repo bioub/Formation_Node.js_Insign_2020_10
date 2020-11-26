@@ -12,20 +12,20 @@ export class AppController {
   // }
 
   
-  @Get('/api/hello/:name')
-  getHello(@Param('name') name = '') {
-    return {msg: 'Hello ' + name};
-  }
+  // @Get('/api/hello/:name')
+  // getHello(@Param('name') name = '') {
+  //   return {msg: 'Hello ' + name};
+  // }
 
   // @Get('/api/hello')
   // getHello(@Response() res: ExpressResponse) {
   //   res.status(202).json({msg: 'Hello'});
   // }
 
-  @HttpCode(201)
-  @Post('/api/users')
-  createUser(@Body() body) {
-    body.id = 123;
-    return body;
-  }
+  // @HttpCode(201)
+  // @Post('/api/users')
+  // createUser(@Body() body) {
+  //   body.id = 123;
+  //   return body;
+  // }
 }

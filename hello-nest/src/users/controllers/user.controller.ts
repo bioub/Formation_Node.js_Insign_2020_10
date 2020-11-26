@@ -1,6 +1,8 @@
 import { Body, Controller, Delete, Get, HttpCode, HttpStatus, NotFoundException, Param, Patch, Post, Put, UseGuards } from '@nestjs/common';
 import { JwtGuard } from '../guards/jwt.guard';
-import { User, UserDto } from '../models/user.model';
+import { UserDto } from '../models/user.dto';
+import { User } from '../models/user.entity';
+import { UserTypeormService } from '../services/user-typeorm.service';
 import { UserService } from '../services/user.service';
 
 let users = [];
@@ -14,7 +16,7 @@ export class UserController {
   //   this.userService = userService
   // }
 
-  constructor(private readonly userService: UserService) {}
+  constructor(private readonly userService: UserTypeormService) {}
 
   // Exercice: créer et répondre aux routes suivantes
 
