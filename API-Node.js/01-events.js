@@ -2,7 +2,10 @@ const { EventEmitter } = require('events');
 
 // projet commun
 class UserService {
-  events = new EventEmitter();
+  events = new EventEmitter(); // PAS encore normé
+  // constructor() {
+  //   this.events = new EventEmitter();
+  // }
   register(user) {
     // TODO register user in database
     this.events.emit('registered', user);

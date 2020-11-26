@@ -2,6 +2,9 @@
 
 const coords = {};
 
+coords.z = 3;
+
+// ES5
 Object.defineProperties(coords, {
   x: {
     value: 1,

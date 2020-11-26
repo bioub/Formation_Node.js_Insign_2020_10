@@ -4,7 +4,7 @@ const coords = {x: 1, y: 2};
 // const varY = coords.y;
 
 // destructurer :
-//    {x: 1   , y: 2   }
+//       {x: 1   , y: 2   }
 // const {x: varX, y: varY} = coords;
 
 // console.log(varX); // 1

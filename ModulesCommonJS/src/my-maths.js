@@ -9,5 +9,6 @@ function multiply(a, b) {
 }
 
 exports.sum = sum; // extension d'objet
+exports.multiply = multiply; // extension d'objet
 
 // }

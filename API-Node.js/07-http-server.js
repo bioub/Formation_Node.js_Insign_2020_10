@@ -4,7 +4,7 @@ const http = require('http');
 // nest, koa, hapi, fastify
 const server = http.createServer();
 
-server.on('request', (req, res) => {
+server.on('request', /** @param {http.IncomingMessage} req @param {http.ServerResponse} res */ (req, res) => {
   if (req.method === 'GET' && req.url === '/') {
     res.statusCode = 200;
     res.setHeader('Content-type', 'text/plain');

@@ -11,3 +11,4 @@ socket.on('connect', () => {
   socket.end('\r\n');
 });
 
+// plutôt des bibliothèques : axios, superagent, got
